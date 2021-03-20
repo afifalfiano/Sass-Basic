@@ -1,35 +1,28 @@
-.container {
-    max-width: 600px;
-    width: 100%;
-    margin: auto;
-    background-color: #eee;
+@import '_variables';
 
-    .sidebar, .main {
-        padding: 10px
+body {
+    h1 {
+        color: $hopbush;
+    }
+}
+
+.btn {
+    padding: 2px 10px;
+    border-radius: 2px;
+    display: block;
+
+    &.btn-primary{
+        color: $white;
+        background-color: $hopbush;
+        border: 1px solid $venus;
+    }
+    &.btn-secondary{
+        color:$black;
+        background-color: $nebula;
+        border: 1px solid $patina;
     }
 
-    .main {
-        margin-left: 220px;
-        min-height: 100vh;
-        border-left: 2px solid #333;
-    }
-
-    .sidebar {
-       width: 200px;
-       float: left; 
-    }
-
-    &.right-nav {
-        .sidebar {
-            float: right;
-        }
-
-        .main {
-            margin-left: 0;
-            margin-right: 220px;
-            border-right: 2px solid #333;
-            border-left: none;
-
-        }
+    &:disabled{
+        opacity: $btn-disabled-opacity;
     }
 }
