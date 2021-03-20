@@ -1,5 +1,17 @@
-@mixin button-color ($color) {
-    color: $white;
-    background-color: $color;
-    border: 1px solid $color;
+@mixin range-thumb () {
+    &::-webkit-slider-thumb {
+        @content;
+      }
+      &::-moz-range-thumb {
+        @content;
+      }
+}
+
+@mixin range-track () {
+    &::-moz-range-track {
+        @content;
+      }
+      &::-webkit-slider-runnable-track {
+        @content;
+      }
 }
