@@ -1,10 +1,6 @@
 @import '_variables.scss';
+@import '_mixins.scss';
 
-@mixin button-color ($color) {
-    color: $white;
-    background-color: $color;
-    border: 1px solid $color;
-}
 .btn {
     padding: 2px 10px;
     border-radius: 2px;
