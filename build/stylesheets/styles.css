@@ -1,23 +1,29 @@
-body h1 {
-  color: #c46;
+.container {
+  max-width: 600px;
+  width: 100%;
+  margin: auto;
+  background-color: #eee;
 }
-
-.btn {
-  padding: 2px 10px;
-  border-radius: 2px;
-  border: 1px solid #c46;
-  display: block;
+.container .sidebar, .container .main {
+  padding: 10px;
 }
-.btn.btn-primary {
-  color: #fff;
-  background-color: #c46;
+.container .main {
+  margin-left: 220px;
+  min-height: 100vh;
+  border-left: 2px solid #333;
 }
-.btn.btn-secondary {
-  color: #fff;
-  background-color: #edbcc8;
+.container .sidebar {
+  width: 200px;
+  float: left;
 }
-.btn:disabled {
-  opacity: 0.5;
+.container.right-nav .sidebar {
+  float: right;
+}
+.container.right-nav .main {
+  margin-left: 0;
+  margin-right: 220px;
+  border-right: 2px solid #333;
+  border-left: none;
 }
 
 /*# sourceMappingURL=styles.css.map */
