@@ -1,24 +1,43 @@
-body h1 {
-  color: #c69;
-}
-
 .btn {
   padding: 2px 10px;
   border-radius: 2px;
   display: block;
+  margin: 10px 0;
 }
-.btn.btn-primary {
+.btn.case1 {
   color: #fff;
   background-color: #c69;
-  border: 1px solid #998909;
+  border: 1px solid #c69;
 }
-.btn.btn-secondary {
-  color: #000;
-  background-color: #d2e1dd;
+.btn.case2 {
+  color: #fff;
+  background-color: #699;
   border: 1px solid #699;
 }
-.btn:disabled {
-  opacity: 0.5;
+.btn.case3 {
+  color: #fff;
+  background-color: #998909;
+  border: 1px solid #998909;
+}
+.btn.case4 {
+  color: #fff;
+  background-color: #d2e1dd;
+  border: 1px solid #d2e1dd;
+}
+.btn.case5 {
+  color: #fff;
+  background-color: red;
+  border: 1px solid red;
+}
+.btn.case6 {
+  color: #fff;
+  background-color: blue;
+  border: 1px solid blue;
+}
+.btn.case7 {
+  color: #fff;
+  background-color: green;
+  border: 1px solid green;
 }
 
 /*# sourceMappingURL=styles.css.map */
