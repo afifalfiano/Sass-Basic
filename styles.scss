@@ -6,7 +6,7 @@
   margin: 10px 0;
   border: 1px solid transparent;
   border-radius: 2px;
-  color: #fff;
+  color: #000;
   &:hover:not(:disabled) {
     box-shadow: 0 5px 15px rgba(0,0,0,0.8);
   }
@@ -21,7 +21,7 @@
 }
 
 .theme-2{
-  @include theme(#609, $darkenpct: 10%);
+  @include theme(#609, $darkenpct: 75%);
 }
 
 .theme-3{

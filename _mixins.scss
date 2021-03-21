@@ -3,7 +3,7 @@
   $other2-color: adjust-hue($primary-color, 180deg);
   $secondary-color: adjust-hue($primary-color, -$rotate);
   .btn-primary {
-    @include btn-base($primary-color, 0);
+    @include btn-base($primary-color);
   }
   .btn-secondary {
     @include btn-base($secondary-color);
@@ -16,10 +16,13 @@
   }
 }
 
-@mixin btn-base($bg, $darken_pct: 20%) {
-  background-color: darken($bg, $darken_pct);
+@mixin btn-base($bg) {
+  background-color: $bg;
   border-color: darken($bg, 20%);
-  &:hover {
+  @if lightness($bg) < 50% {
+    color: white;
+  }
+   &:hover {
     background-color: lighten(saturate($bg, 20%), 10%);
   }
 }
