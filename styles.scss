@@ -10,7 +10,7 @@ body {
   border-width: 1px;
   line-height: 20px;
   border-radius: 2px;
-  &--mode-primary {
+  &.btn--mode-primary {
     background-color: #c46;
     color: #fff;
   }
